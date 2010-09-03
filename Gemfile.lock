@@ -47,7 +47,7 @@ DEPENDENCIES
   dm-timestamps
   haml
   hashie
-  oauth
+  oauth (= 0.3.6)
   rack-flash
   sinatra
-  twitter_oauth
+  twitter_oauth (= 0.4.1)
