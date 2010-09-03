@@ -84,7 +84,7 @@ get '/oauth_callback' do
 
   if @client.authorized?
     account = Hashie::Mash.new(@client.info)
-    @user = User.first_or_create(:id => account.id)
+    @user = User.first_or_create(:twitter_user_id => account.id)
     @user.update(
       :screen_name => account.screen_name,
       :oauth_token => @access_token.token,
