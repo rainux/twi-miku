@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+img {
+    border: none;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+input[type=text], input[type=password], textarea {
+    border: 1px solid gray;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#content {
+    padding: 0 20px;
+}
+
+#footer {
+    padding: 20px;
+}
+
+.green {
+    color: green
+}
+
+.avatar {
+    float: left;
+    margin: 5px;
+}

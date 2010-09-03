@@ -1,0 +1,32 @@
+!!! 5
+%html
+  %head
+    %meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    %title TwiMiku
+    %link(href='/main.css' media='screen' rel='stylesheet' type='text/css')
+
+  %body
+    #container
+      #header
+        %div
+          %h1 TwiMiku
+
+      #content
+        #nav
+          %p
+            %a(href='/') Home
+            - if @user
+              |
+              %a(href='/timeline') Timeline
+              |
+              %a(href='/disconnect') Logout
+
+        - if flash[:notice]
+          %div.green
+            = flash[:notice]
+
+        = yield
+
+      #footer
+        %small
+          &copy; Rainux Luo. API calls remaining: #{@rate_limit_status['remaining_hits']}/#{@rate_limit_status['hourly_limit']} per hour

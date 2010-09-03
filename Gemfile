@@ -1,0 +1,12 @@
+source 'http://rubygems.org'
+
+gem 'sinatra'
+gem 'rack-flash'
+gem 'dm-core'
+gem 'dm-sqlite-adapter'
+gem 'dm-migrations'
+gem 'dm-timestamps'
+gem 'twitter_oauth'
+gem 'oauth'
+gem 'haml'
+gem 'hashie'

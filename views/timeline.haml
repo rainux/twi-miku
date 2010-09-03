@@ -1,0 +1,22 @@
+= partial(:update_password)
+
+%p
+  %form(action='/update_status' method='POST')
+    %label
+      Tweet to Twitter
+      %br
+      %textarea(cols='50' rows='4' name='status')
+    %br
+    %input(type='submit' value='Tweet')
+
+.timeline
+  - @tweets.each do |tweet|
+    %p
+      .avatar
+        %a(href="http://twitter.com/#{tweet['user']['screen_name']}")
+          %img{:height => 48, :width => 48, :src => tweet['user']['profile_image_url']}
+      .tweet
+        %a(href='http://twitter.com/#{tweet['user']['screen_name']}')
+          @#{tweet['user']['screen_name']}
+        = tweet['text']
+      %br(clear='all')
