@@ -1,8 +1,15 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'bundler/setup'
-Bundler.require
+require 'sinatra'
+require 'rack-flash'
+require 'dm-core'
+require 'dm-migrations'
+require 'dm-timestamps'
+require 'twitter_oauth'
+require 'hashie'
+require 'haml'
+
 require 'twitter_oauth_ext'
 require 'model'
 require 'helpers'

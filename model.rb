@@ -1,4 +1,4 @@
-DataMapper.setup(:default, 'sqlite:twi_miku.db')
+DataMapper.setup(:default, 'appengine://auto')
 
 class User
   include DataMapper::Resource
