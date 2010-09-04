@@ -18,3 +18,8 @@ How?
 3. Use the domain name of the server running TwiMiku as a Twitter API proxy for **any Twitter clients** which support Basic Auth API.
 
 Be sure to use your Twitter user name and **the separated password** in your Twitter clients.
+
+Try it!
+=======
+
+You can try an instance of [TwiMiku](http://twi-miku.appspot.com) running on Google App Engine.
