@@ -1,6 +1,36 @@
-%p TiMiku can adapte Twitter OAuth API to a Basic Auth API proxy.
-%p OAuth your self to continue.
+%h3 What's TwiMiku?
+%p
+  TwiMiku is a Twitter OAuth API to Basic Auth API adapter.
+  %br
+  TwiMiku was written with Ruby and Sinatra,
+  it can runs in any Rack application server and Google App Engine.
 
+%h3 Why?
+%p
+  The GFW of China blocked direct access to Twitter.com, so we can't use OAuth API without a proxy or VPN.
+  %br
+  This could be a serious problem when using mobile devices to access Twitter.
+
+%h3 How?
+%p
+  %ol
+    %li
+      OAuth with Twitter
+      %strong once
+      by click the "Sign in with Twitter" button below.
+    %li Set a separated password which will only be used with TwiMiku.
+    %li
+      Use
+      %strong= request.host_with_port
+      as a Twitter API proxy for
+      %strong any Twitter clients
+      which support Basic Auth API.
+
+  Be sure to use your Twitter user name and
+  %strong the separated password
+  in your Twitter clients.
+
+%h3 Try it!
 %p
   %a(href='/connect')
-    %img(src='/sign_in_with_twitter.gif')
+    %img(src='/sign_in_with_twitter.gif' alt='Sign in with Twitter')
