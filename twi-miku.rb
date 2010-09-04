@@ -21,7 +21,7 @@ before do
 
   elsif authorized?
     @user = User.first(
-      :screen_name => @auth.credentials.first,
+      :screen_name.like => @auth.credentials.first,
       :password_sha1 => Digest::SHA1.hexdigest(@auth.credentials.last)
     )
 
