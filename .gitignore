@@ -1,2 +1,5 @@
 config.yml
-twi_miku.db
+twi-miku.db
+.gems/
+bin/
+WEB-INF/

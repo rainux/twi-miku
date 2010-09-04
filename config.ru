@@ -1,6 +1,6 @@
 require 'appengine-rack'
 require 'appengine-apis/urlfetch'
-require 'twi_miku'
+require 'twi-miku'
 
 run Sinatra::Application
 

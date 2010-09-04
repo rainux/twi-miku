@@ -24,6 +24,24 @@ Try it!
 
 You can try an instance of [TwiMiku](http://twi-miku.appspot.com) running on Google App Engine.
 
+Deploy to Google App Engine
+===========================
+
+Use the pre-bundled zipball on Windows
+--------------------------------------
+
+1. Install Sun Java 6, JRE should be enough.
+2. Download [Google App Engine Java SDK](http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Java), unzip to `D:\appengine` directory.
+3. Download [twi-miku.bundled.zip](http://github.com/rainux/twi-miku/downloads), unzip to `D:\twi-miku` directory.
+4. Create an application with your Google App Engine account.
+5. Edit `D:\twi-miku\WEB-INF\appengine-web.xml` with any text editor, change the value in `<application>` tag to the application's id you've created.
+6. Open a cmd window, execute the following commands, fill your Gmail address and password for Google App Engine authentication.
+
+Note: You may need to wait for several minutes.
+
+    cd D:\appengine
+    bin\appcfg.cmd D:\twi-miku
+
 Links
 =====
 
