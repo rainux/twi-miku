@@ -1,4 +1,4 @@
-require 'twi_miku'
+require 'twi-miku'
 
 run Sinatra::Application
 
