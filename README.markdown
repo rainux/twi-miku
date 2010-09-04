@@ -23,3 +23,9 @@ Try it!
 =======
 
 You can try an instance of [TwiMiku](http://twi-miku.appspot.com) running on Google App Engine.
+
+Links
+=====
+
+* Source code: [http://github.com/rainux/twi-miku](http://github.com/rainux/twi-miku)
+* Issues : [http://code.google.com/p/twi-miku/issues/list](http://code.google.com/p/twi-miku/issues/list)
