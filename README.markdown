@@ -35,7 +35,9 @@ Use the pre-bundled zipball on Windows
 3. Download [twi-miku.bundled.zip](http://github.com/rainux/twi-miku/downloads), unzip to `D:\twi-miku` directory.
 4. Create an application with your Google App Engine account.
 5. Edit `D:\twi-miku\WEB-INF\appengine-web.xml` with any text editor, change the value in `<application>` tag to the application's id you've created.
-6. Open a cmd window, execute the following commands, fill your Gmail address and password for Google App Engine authentication.
+6. Create a Twitter OAuth application with your Twitter account.
+7. Rename `D:\twi-miku\config.example.yml` to `D:\twi-miku\config.yml`, edit it with any text editor, change `YOUR_CONSUMER_KEY` and `YOUR_CONSUMER_SECRET`.
+8. Open a cmd window, execute the following commands, fill your Gmail address and password for Google App Engine authentication.
 
 Note: You may need to wait for several minutes.
 
