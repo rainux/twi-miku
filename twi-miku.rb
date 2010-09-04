@@ -28,7 +28,7 @@ before do
 
   elsif authorized?
     @user = User.first(
-      :screen_name => @auth.credentials.first,
+      :screen_name => @auth.credentials.first.downcase,
       :password_sha1 => Digest::SHA1.hexdigest(@auth.credentials.last)
     )
 
@@ -93,7 +93,7 @@ get '/oauth_callback' do
     account = Hashie::Mash.new(@client.info)
     @user = User.first_or_create(:twitter_user_id => account.id)
     @user.update(
-      :screen_name => account.screen_name,
+      :screen_name => account.screen_name.downcase,
       :oauth_token => @access_token.token,
       :oauth_token_secret => @access_token.secret
     )
