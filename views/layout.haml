@@ -29,4 +29,6 @@
 
       #footer
         %small
-          &copy; Rainux Luo. API calls remaining: #{@rate_limit_status['remaining_hits']}/#{@rate_limit_status['hourly_limit']} per hour
+          &copy; 2010 Rainux Luo.
+          - if @rate_limit_status
+            API calls remaining: #{@rate_limit_status['remaining_hits']}/#{@rate_limit_status['hourly_limit']} per hour

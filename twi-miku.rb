@@ -37,7 +37,6 @@ before do
     :token => (@user.oauth_token rescue nil),
     :secret => (@user.oauth_token_secret rescue nil)
   )
-  @rate_limit_status = @client.rate_limit_status
 end
 
 get '/' do
@@ -46,6 +45,7 @@ get '/' do
 end
 
 get '/timeline' do
+  @rate_limit_status = @client.rate_limit_status
   @tweets = @client.home_timeline
   haml :timeline
 end
