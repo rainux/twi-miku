@@ -2,7 +2,7 @@ What's TwiMiku?
 ===============
 
 TwiMiku is a Twitter OAuth API to Basic Auth API adapter.  
-TwiMiku was written with Ruby and Sinatra, it can runs in any Rack application server and Google App Engine.
+TwiMiku was written with Ruby and Sinatra, it can runs on any Rack application server and Google App Engine.
 
 Why?
 ====
