@@ -1,4 +1,4 @@
-DataMapper.setup(:default, 'sqlite:twi-miku.db')
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite:twi-miku.db')
 
 class User
   include DataMapper::Resource
